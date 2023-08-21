@@ -1,8 +1,8 @@
 import { NextResponse } from "next/server";
 
 export const POST = async (req) => {
-  const product = await req.json();
-  console.log(product);
+  const event = await req.json();
+  console.log(event);
 
-  return NextResponse.json({ ...product }, { status: 200 });
+  return NextResponse.json({ status: 200 });
 };
